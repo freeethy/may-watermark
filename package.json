@@ -1,5 +1,5 @@
 {
-  "name": "watermark",
+  "name": "may-watermark",
   "version": "1.0.0",
   "description": "水印",
   "main": "dist/watermark.js",
@@ -38,5 +38,8 @@
       "jest-canvas-mock"
     ],
     "collectCoverage": true
+  },
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/" 
   }
 }
