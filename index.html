@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .test {
+            position: relative;
+            width: 80%;
+            height: 100%;
+            /* line-height: 600px; */
+            border: 1px solid #e23fac;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .text {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div>测试下水印呀</div>
+    <br />
+    <div class="test">
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">哈哈</div>
+    </div>
+    <script src="./dist/watermark.js"></script>
+    <script>
+        window.onload = function () {
+            window.MayWaterMark.init({
+                mode: 'development',
+                name: "水印水印你在哪儿水印水印你在哪儿，水印水印你在哪儿水印水印你在哪儿",
+                color: "rgba(231, 236, 254, 0.7)",
+                font: "14px 黑体",
+                width: "130px",
+                height: "130px",
+                rotate: "45",
+                auto: false,
+                container: document.querySelector('.test')
+            })
+        }
+    </script>
+</body>
+
+</html>

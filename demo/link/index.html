@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .test {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            /* line-height: 600px; */
+            border: 1px solid #e23fac;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .text {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div>测试下水印呀</div>
+    <br />
+    <div class="test">
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+        <div class="text">水印在这儿吗</div>
+    </div>
+    <script src="../../dist/watermark-0.5.0.min.js"></script>
+    <script>
+        window.onload = function () {
+            window.MayWaterMark.init({
+                name: window.MayWaterMark.getCookie("staff") || "staff",
+                // color: "gray",
+                auto: true,
+                container: document.querySelector('.test')
+            })
+        }
+    </script>
+</body>
+
+</html>
